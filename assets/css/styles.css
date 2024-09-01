@@ -1,0 +1,469 @@
+/* header */
+.header-top .inner-wrap{
+    display: flex;
+    background-color: #EFEFEF;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    position: fixed;
+    top:0;
+    width: 100%; /* Đảm bảo thanh kéo dài hết chiều rộng */
+    z-index: 1000; /* Đảm bảo thanh nằm trên các phần tử khác */
+}
+.header-top .inner-wrap ul{
+    list-style-type: none;
+    display: flex;
+}
+.header-top .inner-wrap a{
+   color:black;
+}
+.header-top .inner-wrap .inner-list ul li{
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 20px;
+}
+.header-top .inner-wrap a{
+    display: flex;
+    align-items: center;
+}
+.header-top .inner-wrap span{
+    font-size: 25px;
+    font-weight: bold;
+}
+.header-top .inner-wrap img{
+    height: 48px;
+    width: auto;
+}
+.header-top .inner-wrap .inner-contact ul li{
+    display: flex;
+    padding-right: 5px ;
+    background-color: white;
+    margin-right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    font-size: 30px;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+}
+/* end header */
+/* section one  */
+.section-one{
+    background-image: url(../images/background1.jpg);
+    background-size: cover; /* Đảm bảo ảnh phủ hết vùng chứa */
+    background-position: center; /* Căn giữa ảnh nền */
+    position: relative;
+    width: 100%; /* Đặt chiều rộng */
+    height: 100vh; /* Đặt chiều cao */
+    color: white;
+    
+}
+.section-one::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Lớp phủ màu đen với độ trong suốt 50% */
+    z-index: 2;
+}
+.section-one .container .inner-wrap 
+{
+    position: absolute;
+    z-index: 2;
+    padding-top:200px;
+
+}
+.section-one .container .inner-wrap .content .intro{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.section-one .container .inner-wrap .content h2{
+    font-size: 60px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+.section-one .container .inner-wrap .content .title{
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    z-index: 2;
+}
+.button{
+    display: inline-block;
+    background-color: #F8DFCD;
+    padding: 25px 40px;
+    font-weight: bold;
+}
+.button-one{
+    margin-right: 30px;
+    color: black;
+}
+.button-one:hover{
+    background-color: white;
+}
+.button-two{
+    background-color:transparent;
+    border: 1px solid gray;
+    color:white ;
+}
+.button-two:hover{
+    background-color: #F8DFCD;
+    color: black;
+    border: none;
+}
+/* end section one */
+/* section-two */
+.section-two{
+    padding-top: 100px;
+    padding-bottom: 150px;
+}
+.section-two .inner-wrap{
+    display: flex;
+}
+.section-two img{
+    margin-right: 100px;
+}
+.section-two .core{
+    color: gray;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.section-two h2{
+    margin-top: 0px;
+    font-size: 60px;
+}
+.section-two ul{
+    display: flex;
+}
+.section-two ul li{
+    display: flex;
+    color: #FF8484;
+    padding-right: 5px ;
+    background-color: white;
+    margin-right: 50px;
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    border-radius: solid ;
+    font-size: 30px;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    margin-bottom: 30px;
+    font-size: 50px;
+}
+.section-two .title{
+    color: gray;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+/* end-section-two */
+/* start section-three */
+.section-three {
+    background-color: white;
+    margin: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding-left: 100px;
+    padding-right: 100px;
+    height: 500px;
+    margin: 0 100px;
+}
+
+.section-three .inner-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-three .content {
+    max-width: 50%;
+    padding-top: 100px;
+}
+
+.section-three p{
+    font-size: 20px;
+    color: gray;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.section-three h2 {
+    font-size: 80px;
+    margin: 0;
+}
+
+.section-three .img {
+    max-width: 35%; /* Giảm kích thước hình ảnh xuống */
+    position: relative;
+}
+
+.section-three .img img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    position: relative;
+    bottom: 80px;
+}
+/* end section three */
+
+/* start section 4 */
+.section-four{
+    margin-top: 100px ;
+    background-color: white;
+    padding: 100px 200px;
+
+}
+.section-four ul{
+    list-style-type: none;
+}
+.section-four h3{
+    font-size: 30px;
+}
+.section-four p{
+    color:gray;
+    font-size: 20px;
+}
+.section-four ul{
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+.section-four ul li{
+    width: 30%;
+    display: flex;
+    padding-bottom: 30px;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+}
+.section-four ul li i{
+    background-color: #EFEFEF;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    margin-right: 20px;
+    font-size: 30px;
+}
+.section-four ul li span{
+    color: gray;
+    font-size: 20px;
+}
+/* end section 4 */
+/* start section 5 */
+.section-five{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.section-five .h2{
+    text-align: center;
+    font-size: 80px;
+}
+.section-five .box{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    height: 500px;
+}
+.section-five  .img{
+    width: calc((100%/3) - 20px);
+    height: 100%;
+    aspect-ratio: 4/3;
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+}
+.section-five img{
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+}
+.section-five .content{
+    position: absolute;
+    top:0;
+    left: 0;
+    padding-left: 40px;
+    padding-top: 380px;
+}
+.section-five .content p{
+    color: gray;
+    font-weight: bold;
+    font-size: 20px;
+}
+.section-five .content h2{
+    font-size: 30px;
+    margin-top: 0;
+}
+.section-five a {
+    display: inline-block;
+    background-color: white;
+    padding: 12px 18px;
+    border-radius: 10px;
+    position: absolute;
+    top: 320px; /* Định vị theo top, không sử dụng padding */
+    left: 350px;
+    font-size: 40px;
+    color: black;
+}
+/* end section 5 */
+/* start section six */
+.section-six{
+    margin-top: 100px;
+    background-color: #1B2026;
+    padding: 100px 0; /* Thay đổi giá trị này tùy theo nhu cầu */
+}
+.section-six .inner-wrap{
+    margin: 0 100px;
+    background-color: white;
+    padding: 40px 40px;
+    display: flex;
+}
+.section-six ul{
+    list-style-type: none;
+    font-size: 30px;
+    color: gray;
+}
+.section-six .inner-wrap .content{
+    width: 49%;
+}
+.section-six .inner-wrap .content h2{
+    margin-top: 0px;
+    font-size: 80px;
+}
+.section-six .box{
+    width:49% ;
+    margin-left: 200px;
+}
+.section-six .inner-wrap .content p{
+    font-size: 16px;
+    color: gray;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.section-six ul li {
+    width: 100%;
+    height: 80px;
+    border: 1px solid #EFEFEF;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 20px 20px 20px 20px; /* Đặt khoảng cách đồng đều ở các phía */
+    position: relative; /* Cho phép sử dụng position để căn chỉnh nội dung bên trong */
+}
+.section-six ul li:nth-child(1) {
+    margin-right: 20px;
+}
+.section-six ul li .fa-arrow-right{
+    position: absolute; /* Căn chỉnh tương đối với phần tử li */
+    right: 20px; /* Cách viền phải của li 20px */
+    top: 50%; /* Đặt biểu tượng ở giữa theo chiều dọc */
+    transform: translateY(-50%); /* Đảm bảo biểu tượng được căn giữa */
+}
+/* end section six */
+/* start section seven */
+.section-seven{
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+}
+.section-seven .content{
+    text-align: center;
+}
+.section-seven .content p{
+    font-size: 20px;
+    font-weight: bold;
+    color: gray;
+}
+.section-seven .content h2{
+    font-size: 60px;
+}
+.section-seven .inner-box{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    height: 500px;
+}
+.section-seven .box{
+    background-color: white;
+    margin-right: 40px;
+    padding: 60px;
+    border-radius: 10px;
+}
+.section-seven  img{
+    width: calc((100%/4) - 20px);
+    height: 100%;
+    aspect-ratio: 4/3;
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 50%;
+}
+.section-seven img{
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+}
+.section-seven ul{
+    list-style-type: none;
+    display: flex;
+}
+.name, .work{
+    text-align: center;
+}
+.name{
+    font-size: 30px;
+}
+.work{
+    font-size: 20px;
+    color: gray;
+}
+/* end section seven */
+/* start section 8 */
+.section-8 {
+    background-image: url(../images/background3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; /* Thay đổi vị trí của ảnh nền */
+    height: 500px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+    border-radius: 10px;
+}
+.box-2{
+    position: relative;
+    margin-bottom: 100px;
+}
+.box-2 .content{
+    display: flex;
+    background-color: white;
+    margin-left: 200px;
+    margin-right: 200px;
+    border-radius: 10px;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 400px;
+}
+.box-2 .content p{
+    color:gray;
+    font-size: 20px;
+}
+.button-6{
+    background-color: black;
+    color: white;
+    position: absolute;
+    left: 1200px;
+    top:30px;
+    width: 150px;
+    border-radius: 5px;
+}
+/* end section 8 */
